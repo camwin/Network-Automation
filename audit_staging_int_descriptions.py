@@ -13,11 +13,6 @@ from genie.testbed import load
 tb = load('yaml/lab_devices.yaml')
 
 
-
-# Open file that we want to output to at the end
-f = open("up_interfaces_with_staging_audit.csv", "w")
-
-
 try:
 
     # For each router in the testbed file, connect to it and run "show interfaces descriptions", storing the output in a dictionary
